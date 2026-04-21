@@ -8,6 +8,14 @@ pipeline {
             }
         }
 
+        stage('Build Maven Project') {
+            steps {
+                dir('Assignment 10 Trainee testing') {
+                    sh 'mvn clean package -DskipTests'
+                }
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
                 dir('Assignment 10 Trainee testing') {
