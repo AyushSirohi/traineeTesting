@@ -1,0 +1,5 @@
+com\example\demo\entities\Trainee.class
+com\example\demo\ITraineeSerivces.class
+com\example\demo\Application.class
+com\example\demo\reposiories\ITrainee.class
+com\example\demo\TraineeServices.class
