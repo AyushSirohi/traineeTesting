@@ -10,8 +10,10 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                script {
-                    docker.build("my-app-image")
+                dir('Assignment 10 Trainee testing') {
+                    script {
+                        docker.build("my-app-image")
+                    }
                 }
             }
         }
